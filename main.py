@@ -11,9 +11,8 @@ def main():
         API = f"YOURAPI={message}"
         
         z = get_requests(API)
-        nigga = json.loads(z)
-        print(nigga['cnt'])
-        # print(type(nigga))
+        response = json.loads(z)
+        print(response['cnt'])
         
 if __name__ == "__main__":
     main()
