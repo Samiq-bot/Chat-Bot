@@ -8,7 +8,7 @@ def main():
     while True:
         message = input(">>")
 
-        API = f"http://api.brainshop.ai/get?bid=180164&key=7OHxZBMF85oOiWkn&uid=[uid]&msg={message}"
+        API = f"YOURAPI={message}"
         
         z = get_requests(API)
         nigga = json.loads(z)
